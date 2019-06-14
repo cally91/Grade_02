@@ -3,11 +3,11 @@ package com.biz.grade.controller;
 import java.io.FileNotFoundException;
 
 import com.biz.grade.serivce.ScoreSerivce;
-import com.biz.grade.serivce.ScoreSerivceiceimp_04;
+import com.biz.grade.serivce.ScoreSerivceiceimp_05;
 
-public class ScoreExec_02 {
+public class ScoreExec_03 {
 	public static void main(String[] args) {
-		String scoreFlie = "src/com/biz/grade/data/score.txt";
+		String scoreFlie = "src/com/biz/grade/data/score_02.txt";
 
 		/*
 		 * try 문으로 묶어야되는 명령문이 있을경우 
@@ -19,7 +19,7 @@ public class ScoreExec_02 {
 
 		ScoreSerivce sSerivce = null;
 		try {
-			sSerivce = new ScoreSerivceiceimp_04(10, scoreFlie);
+			sSerivce = new ScoreSerivceiceimp_05( scoreFlie);
 
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
